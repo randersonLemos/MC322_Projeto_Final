@@ -20,10 +20,43 @@ Randerson Araújo de Lemos. RA.: 103897
 ## Vídeo da Prévia
 [vídeo](https://www.youtube.com/watch?v=wtWPpYuzdb8)
 
+## Vídeo do Jogo
+Colocar vídeo do jogo. Na máximo 5 minutos.
+
 # Slides dos Projeto
 ## Slides da Prévia
 [apresentação](./assets)
 
+## Slides da Apresentação Final
+Coloque um link para os slides da apresentação final do projeto
+
+# Relatório de Evolução
+Relotório de evolução, descrevendo as ecoluções do design do projeto,
+dificuldades enfretadas, mudanças de rumo, melhorias e lições aprendidas.
+Referênias aos diagramas e recortes de mudanças são bem-vindas
+
+# Destaques de Código
+<Escolha trechos relevantes e/ou de destaque do seu código. Apresente 
+um recorte (você pode usar reticências para remover partes menos importantes).
+Veja como foi usado o highlight de Java para o código.>
+
+# Destaques de Pattern
+Destaques de patterns adotados pela equipe. Sugestẽs de estutura
+
+## Diagrama do Pattern
+Diagrama do pattern dentro do contexto da aplicação
+
+## Código de Pattern
+Colocar código e explicação de como o Patterns foi adotado
+
+# Conclusão e Trabalhos Futuros
+<Apresente aqui as conclusões do projeto e propostas de trabalho futuro. 
+Esta é a oportunidade em que você pode indicar melhorias no projeto a partir
+de lições aprendidas e conhecimentos adquiridos durante a realização do projeto,
+mas que não puderam ser implementadas por questões de tempo. Por exemplo, 
+há design patterns aprendidos no final do curso que provavelmente não puderam 
+ser implementados no jogo -- este é o espaço onde você pode apresentar como 
+oaplicaria o pattern no futuro para melhorar o jogo.>
 
 # Documentação
 ## Diagramas
