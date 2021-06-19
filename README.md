@@ -1,15 +1,14 @@
-# Projeto Corridinha da Massa
+# Corridinha da Massa
 
-# Descrição Resumida do Projeto/Jogo
 Corrida da massa é um jogo de corrida em que o jogador personifica um piloto que
-participa de uma competição de corrida com obstáculos. Mas essa não é uma 
-corrida normal, pois a vida do piloto depende dele completar o circuito 
-que é imprevisível e cheio de perigos. O circuito há obstáculos, sendo alguns 
+participa de uma competição de corrida com obstáculos. Mas essa não é uma
+corrida normal, pois a vida do piloto depende dele completar o circuito
+que é imprevisível e cheio de perigos. No circuito há obstáculos, sendo alguns
 apenas muros intransponíveis enquanto outros labaredas de fogo mortais.
-Há também, no ciruito, porções mágicas que dotam o carro de habilidades
+Há também, no circuito, porções mágicas que dotam o carro de habilidades
 especiais e que podem ser essenciais para a sobrevivência do piloto.
 
-![Capa](assets/capa.png)
+![Capa](assets/capa.gif)
 
 # Equipe Peixonauta
 Pablo Areia Delgado. R.: 223037
@@ -21,7 +20,7 @@ Randerson Araújo de Lemos. RA.: 103897
 [vídeo](https://www.youtube.com/watch?v=wtWPpYuzdb8)
 
 ## Vídeo do Jogo
-Colocar vídeo do jogo. Na máximo 5 minutos.
+[vídeo](https://youtu.be/vfONENL0wm4)
 
 # Slides dos Projeto
 ## Slides da Prévia
@@ -36,7 +35,7 @@ dificuldades enfretadas, mudanças de rumo, melhorias e lições aprendidas.
 Referênias aos diagramas e recortes de mudanças são bem-vindas
 
 # Destaques de Código
-<Escolha trechos relevantes e/ou de destaque do seu código. Apresente 
+<Escolha trechos relevantes e/ou de destaque do seu código. Apresente
 um recorte (você pode usar reticências para remover partes menos importantes).
 Veja como foi usado o highlight de Java para o código.>
 
@@ -50,12 +49,12 @@ Diagrama do pattern dentro do contexto da aplicação
 Colocar código e explicação de como o Patterns foi adotado
 
 # Conclusão e Trabalhos Futuros
-<Apresente aqui as conclusões do projeto e propostas de trabalho futuro. 
+<Apresente aqui as conclusões do projeto e propostas de trabalho futuro.
 Esta é a oportunidade em que você pode indicar melhorias no projeto a partir
 de lições aprendidas e conhecimentos adquiridos durante a realização do projeto,
-mas que não puderam ser implementadas por questões de tempo. Por exemplo, 
-há design patterns aprendidos no final do curso que provavelmente não puderam 
-ser implementados no jogo -- este é o espaço onde você pode apresentar como 
+mas que não puderam ser implementadas por questões de tempo. Por exemplo,
+há design patterns aprendidos no final do curso que provavelmente não puderam
+ser implementados no jogo -- este é o espaço onde você pode apresentar como
 oaplicaria o pattern no futuro para melhorar o jogo.>
 
 # Documentação
@@ -78,7 +77,7 @@ Autores | `<Pablo e Randerson>`
 Interfaces | IPainelConstrutor <br> IPainelControle <br> IRCircuitoPainel <br> IRPilotoPainel
 
 ~~~java
-public interface IPainel extends 
+public interface IPainel extends
   IPainelConstrutor
 , IPainelControle
 , IRCircuitoPainel
@@ -118,7 +117,7 @@ Autores | `<Pablo e Randerson>`
 Interfaces | ICircuitoContrutor <br> ICircuitoControle <br> ICircuitoPainel <br>  ICircuitoPiloto
 
 ~~~java
-public interface ICircuito extends 
+public interface ICircuito extends
   ICircuitoConstrutor
 , ICircuitoControle
 , ICircuitoPainel
@@ -137,11 +136,11 @@ Autores | `<Pablo e Randerson>`
 Interfaces | IControleConstrutor <br> IRCircuitoControle <br> IRPilotoControle <br> IRPainelControle
 
 ~~~java
-public interface IControle extends 
-  IControleConstrutor 
+public interface IControle extends
+  IControleConstrutor
 , IRCircuitoControle
 , IRPilotoControle
-, IRPainelControle 
+, IRPainelControle
 {
 	public void comecarJogo();
 }
@@ -158,7 +157,7 @@ Autores | `<Pablo e Randerson>`
 Interfaces | IRCircuitoConstrutor <br> IRControleConstrutor <br> IRPilotoConstrutor <br> IRPainelConstrutor
 
 ~~~java
-public interface IConstrutor extends 
+public interface IConstrutor extends
   IRCircuitoConstrutor
 , IRControleConstrutor
 , IRPilotoConstrutor
@@ -182,7 +181,7 @@ Método | Objetivo
 ### Interface `ICircuitoContrutor`
 Construtor poder criar a matriz do Objeto Circuito (matriz back-end)
 ~~~java
-public interface ICircuitoConstrutor 
+public interface ICircuitoConstrutor
 {
 	void setMatriz(int maxLin, int maxCol, Elemento matriz[][]);
 }
@@ -199,7 +198,7 @@ public interface ICircuitoControle {
 	public int getMaxCol();
 	void setElemento(Elemento elemento);
 	public Elemento getElemento(int lin, int col);
-	
+
 }
 ~~~
 Método | Objetivo
@@ -212,7 +211,7 @@ Método | Objetivo
 ### Interface `ICircuitoPainel`
 Interligar as matrizes back-end e front-end
 ~~~java
-public interface ICircuitoPainel 
+public interface ICircuitoPainel
 {
 	public int getMaxLin();
 	public int getMaxCol();
@@ -228,7 +227,7 @@ Método | Objetivo
 ### Interface `ICircuitoPiloto`
 Piloto e Circuito são independentes no código, o objeto Piloto sabe onde ele está, mas precisa de informações do Circuito para conhecer os arredores
 ~~~java
-public interface ICircuitoPiloto 
+public interface ICircuitoPiloto
 {
 	public int getMaxLin();
 	public int getMaxCol();
@@ -265,7 +264,7 @@ public interface IPilotoControle {
 	public void setImagemIcon1();
 	public void setImagemIcon2();
 	public void setImagemIcon3();
-	public void setPosicao(int lin, int col);	
+	public void setPosicao(int lin, int col);
 	public void setPoderzin(int valor);
 	public int getPoderzin();
 }
@@ -286,7 +285,7 @@ Método | Objetivo
 ### Interface `IPilotoPainel`
 O piloto só está inserido na matriz front-end, Painel pega suas informações e atualiza a matriz
 ~~~java
-public interface IPilotoPainel 
+public interface IPilotoPainel
 {
 	public int getLin();
 	public int getCol();
@@ -302,7 +301,7 @@ Método | Objetivo
 ### Interface `IPainelConstrutor`
 Construtor cria o Objeto Painel (matriz front-end) sobre as condições iniciais do objeto Circuito
 ~~~java
-public interface IPainelConstrutor 
+public interface IPainelConstrutor
 {
 	public void setMatriz(int maxLin, int maxCol, JLabel matriz[][]);
 }
@@ -314,7 +313,7 @@ Método | Objetivo
 ### Interface `IPainelControle`
 Controle ser capaz de atualizar a interface gráfica a cada iteração
 ~~~java
-public interface IPainelControle 
+public interface IPainelControle
 {
 	public void atualizarPainel();
 	public void mostrarPainel();
