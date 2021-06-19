@@ -22,12 +22,12 @@ Randerson Araújo de Lemos. RA.: 103897
 ## Vídeo do Jogo
 [vídeo](https://youtu.be/vfONENL0wm4)
 
-# Slides dos Projeto
+# Slides do Projeto
 ## Slides da Prévia
-[apresentação](./assets)
+[apresentação](./assets/previa)
 
 ## Slides da Apresentação Final
-Coloque um link para os slides da apresentação final do projeto
+[apresentação](./assets/final)
 
 # Relatório de Evolução
 Relotório de evolução, descrevendo as ecoluções do design do projeto,
