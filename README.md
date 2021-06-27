@@ -30,9 +30,29 @@ Randerson Araújo de Lemos. RA.: 103897
 [apresentação](./assets/final)
 
 # Relatório de Evolução
-Relotório de evolução, descrevendo as ecoluções do design do projeto,
-dificuldades enfretadas, mudanças de rumo, melhorias e lições aprendidas.
-Referênias aos diagramas e recortes de mudanças são bem-vindas
+As princiapais mudanças que o projeto sofreu ao longo do seu desenvolvimento foram
+relacionadas com a arquitetura do programa. Anteriormente, a parte de Visualização
+(VIEW) foi concebida para ter um componente específico para o gerenciamento visual
+do circuito e um outro para o gerenciamento visual do piloto. Esses dois componentes
+se comunicariam com o componente Painel e este, juntando as informações visuais
+disponibilizadas, apresentaria ao usuário os elementos visuais do jogo. A arquitetura
+original está apresentada na figura abaixo.
+
+![Arquitetura_View_Antigo](assets/Arquitetura_View_Antigo.png)
+
+Depois, na nova arquitetura proposta para a parte de Visualização, ficou-se
+apenas com o componente Painel, que ficou responsável, nessa nova versão, pelo
+gerenciamento das informações visuais e apresentação dessas informações ao
+usuário. Essa decisão veio pelo entendimento da dupla de que seria importante
+manter os elementos de visualização dentro de um mesmo componente (a nova arquitetura
+pode ser vista na seção Diagrama Geral do Projeto).
+
+Outra evolução do código veio da transferência da funcionalidade
+de gerenciamento de criação de novos elementos do circuito do componente Controle
+para o componente Construção. A transferência foi motivada pelo aumento de
+coerência das atribuições de cada componente. Com ela, toda parte de gerenciamento
+de criação de novos elementos ficou com o componente Construtor, restando assim,
+com o componente Controle, apenas as atribuições de controle dos estados do jogo.
 
 # Destaques de Código
 <Escolha trechos relevantes e/ou de destaque do seu código. Apresente
@@ -49,13 +69,20 @@ Diagrama do pattern dentro do contexto da aplicação
 Colocar código e explicação de como o Patterns foi adotado
 
 # Conclusão e Trabalhos Futuros
-<Apresente aqui as conclusões do projeto e propostas de trabalho futuro.
-Esta é a oportunidade em que você pode indicar melhorias no projeto a partir
-de lições aprendidas e conhecimentos adquiridos durante a realização do projeto,
-mas que não puderam ser implementadas por questões de tempo. Por exemplo,
-há design patterns aprendidos no final do curso que provavelmente não puderam
-ser implementados no jogo -- este é o espaço onde você pode apresentar como
-oaplicaria o pattern no futuro para melhorar o jogo.>
+Concluirmos com a finalização deste trabalho que a Orientação a Objeto é um
+excelente paradigma de programação e auxilia o usuário na organização dos códigos
+e seu reaproveitamento com suas ideias de Herança e Polimorfismo. Então, o desenvolvimento do jogo foi bastante facilitado por esse paradigma assim, como
+também o foi, devido a padrão arquitetural Model-View-Control.
+
+Sobre o jogo, a dupla entende que os resultados desejados fora alcançados. Uma
+visualização atrativa foi alcançada, assim como uma boa jogabilidade e grau
+de entretenimento. Como proposto inicialmente, é uma jogo sem complicações. É
+sentar e jogar!
+
+Pra trabalhos futuros, há a necessidade de se trabalhar para evitar que o
+piloto consiga se movimentar pelas diagonais dos obstáculos. Além disso,
+poderia-se pensar em um esquema de fases para o jogo, na criação de diferentes
+pilotos (cada qual com uma certa especialidade) e na diversificação dos obstáculos.
 
 # Documentação
 ## Diagramas
@@ -365,8 +392,8 @@ public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCir
 		}
 		return null;
 	}
-	
-	
+
+
 	public void setElemento(Elemento elemento) throws TrataExcecaoAcessoMatrizCircuito
 	{
 		int lin = elemento.getLin();
