@@ -60,13 +60,11 @@ um recorte (você pode usar reticências para remover partes menos importantes).
 Veja como foi usado o highlight de Java para o código.>
 
 # Destaques de Pattern
-Destaques de patterns adotados pela equipe. Sugestẽs de estutura
-
-## Diagrama do Pattern
-Diagrama do pattern dentro do contexto da aplicação
-
-## Código de Pattern
-Colocar código e explicação de como o Patterns foi adotado
+O jogo foi organizado seguindo o Pattern Model-View-Control (a representação desse
+modelo junto com os componentes pode ser visto na seção Diagrama Geral do Projeto).
+Usar esse padrão (Pattern) foi muito importante para a estruturação dos códigos
+do jogo, pois já orientava os desenvolvedores sobre onde cada componente do jogo
+deveria ser desenvolvido.
 
 # Conclusão e Trabalhos Futuros
 Concluirmos com a finalização deste trabalho que a Orientação a Objeto é um
