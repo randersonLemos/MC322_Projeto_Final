@@ -107,7 +107,7 @@ deveria ser desenvolvido.
 Concluirmos com a finalização deste trabalho que a Orientação a Objeto é um
 excelente paradigma de programação e auxilia o usuário na organização dos códigos
 e seu reaproveitamento com suas ideias de Herança e Polimorfismo. Então, o desenvolvimento do jogo foi bastante facilitado por esse paradigma assim, como
-também o foi, devido a padrão arquitetural Model-View-Control.
+também o foi, devido ao padrão arquitetural Model-View-Control.
 
 Sobre o jogo, a dupla entende que os resultados desejados fora alcançados. Uma
 visualização atrativa foi alcançada, assim como uma boa jogabilidade e grau
