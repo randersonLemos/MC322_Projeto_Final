@@ -55,9 +55,43 @@ de criação de novos elementos ficou com o componente Construtor, restando assi
 com o componente Controle, apenas as atribuições de controle dos estados do jogo.
 
 # Destaques de Código
-<Escolha trechos relevantes e/ou de destaque do seu código. Apresente
-um recorte (você pode usar reticências para remover partes menos importantes).
-Veja como foi usado o highlight de Java para o código.>
+Exemplo do código onde podemos exibir o polimorfismo:
+~~~java
+public Elemento geradorAleatorioDeElementosSemPiloto(int lin, int col)
+	{
+		int valor = random.nextInt(limiteSuperiorNumeroSorteado);
+		
+		while(true)
+		{
+			for(int i=0; i<valoresLimiteElementosSemPiloto.length; i++)
+			{
+				int valorLimite = valoresLimiteElementosSemPiloto[i];
+				if(valor < valorLimite)
+				{
+					if(i == 0)
+					{
+						return new Livre(lin, col);
+					}
+					if(i == 1)
+					{
+						return new Muralha(lin, col);
+					}
+					if(i == 2)
+					{
+						return new Fogo(lin, col);
+					}
+					if(i == 3)
+					{
+						return new Porcao(lin, col);
+					}
+				}
+				valor -= valorLimite;
+			}
+		}		
+	}	
+~~~
+Livre, Muralha, Fogo e Porcao são herdeiras de Elemento e agem de formas diferentes dentro do curcuito.
+
 
 # Destaques de Pattern
 O jogo foi organizado seguindo o Pattern Model-View-Control (a representação desse
@@ -65,6 +99,9 @@ modelo junto com os componentes pode ser visto na seção Diagrama Geral do Proj
 Usar esse padrão (Pattern) foi muito importante para a estruturação dos códigos
 do jogo, pois já orientava os desenvolvedores sobre onde cada componente do jogo
 deveria ser desenvolvido.
+
+![Painel](assets/Pattern.jpg)
+
 
 # Conclusão e Trabalhos Futuros
 Concluirmos com a finalização deste trabalho que a Orientação a Objeto é um
