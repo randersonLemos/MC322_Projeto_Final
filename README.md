@@ -184,11 +184,19 @@ Construtor poder criar a matriz do Objeto Circuito (matriz back-end)
 public interface ICircuitoConstrutor
 {
 	void setMatriz(int maxLin, int maxCol, Elemento matriz[][]);
+	public int getMaxLin();
+	public int getMaxCol();
+	public void setElemento(Elemento elemento) throws TrataExcecaoAcessoMatrizCircuito;
+	public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCircuito;
 }
 ~~~
 Método | Objetivo
 -------| --------
 `setMatriz` | Atualiza a matriz Circuito
+`getMaxLin` | Acessa o numero de linhas da matriz Circuito
+`getMaxCol` | Acessa o numero de colunas da matriz Circuito
+`setElemento` | Atualiza uma posição da matriz Circuito (ou seja, um Elemento)
+`getElemento` | Acessa uma posição da matriz Circuito (ou seja, um Elemento)
 
 ### Interface `ICircuitoControle`
 Controle ter acesso a informações sobre a matriz e poder atualizá-la
