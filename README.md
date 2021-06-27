@@ -354,4 +354,4 @@ Classe | Descrição
 ----- | -----
 Excecoes | Engloba todas as exceções de divisões não aceitas.
 RunTimeException | Trata o padrão de exceções da classe
-TrataExcecaoMatrizCircuito | Indica que há acessos de pocições inválidas
+TrataExcecaoAcessoMatrizCircuito | Indica que há acessos de pocições inválidas
