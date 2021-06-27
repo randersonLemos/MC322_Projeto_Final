@@ -338,7 +338,7 @@ Método | Objetivo
 
 ## Plano de Exceções
 
-![Hierarquia Exceções](assets/Excecoes.jpg)
+![Hierarquia Exceções](assets/excecoes.jpg)
 
 ## Descrição das classes de exceção
 
