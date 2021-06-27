@@ -100,7 +100,7 @@ Usar esse padrão (Pattern) foi muito importante para a estruturação dos códi
 do jogo, pois já orientava os desenvolvedores sobre onde cada componente do jogo
 deveria ser desenvolvido.
 
-![Painel](assets/Pattern.jpg)
+![Painel](assets/Pattern.jpeg)
 
 
 # Conclusão e Trabalhos Futuros
