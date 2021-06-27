@@ -348,7 +348,7 @@ Método | Objetivo
 
 ![Hierarquia Exceções](assets/excecoes.jpg)
 
-### Código das Exceções
+### Código da Execução Exceções
 ~~~java
 public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCircuito
 	{
