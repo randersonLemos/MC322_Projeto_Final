@@ -415,4 +415,4 @@ Classe | Descrição
 ----- | -----
 Exception | Engloba todas as exceções
 RunTimeException | Exceções que não bloqueiam, quando não tratadas, a execução do código (unchecked)
-TrataExcecaoMatrizCircuito | Exceções que tranta acessos fora do range do matriz do circuito
+TrataExcecaoAcessoMatrizCircuito | Exceções que tranta acessos fora do range do matriz do circuito
