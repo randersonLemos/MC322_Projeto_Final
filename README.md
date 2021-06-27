@@ -345,5 +345,5 @@ Método | Objetivo
 Classe | Descrição
 ----- | -----
 Excecoes | Engloba todas as exceções de divisões não aceitas.
-LimiteCircuito | Indica que há acesso a posoções inválidas da matriz
-ArquivoImagem | Indica que está recebendo um arquivo de imagem inválido
+RunTimeException | Trata o padrão de exceções da classe
+TrataExcecaoMatrizCircuito | Indica que há acessos de pocições inválidas
