@@ -413,6 +413,6 @@ public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCir
 
 Classe | Descrição
 ----- | -----
-Excecoes | Engloba todas as exceções de divisões não aceitas.
-RunTimeException | Trata o padrão de exceções da classe
-TrataExcecaoAcessoMatrizCircuito | Indica que há acessos de pocições inválidas
+Exception | Engloba todas as exceções
+RunTimeException | Exceções que não bloqueiam, quando não tratadas, a execução do código (unchecked)
+TrataExcecaoMatrizCircuito | Exceções que tranta acessos fora do range do matriz do circuito
