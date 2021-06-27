@@ -204,8 +204,8 @@ Controle ter acesso a informações sobre a matriz e poder atualizá-la
 public interface ICircuitoControle {
 	public int getMaxLin();
 	public int getMaxCol();
-	void setElemento(Elemento elemento);
-	public Elemento getElemento(int lin, int col);
+	void setElemento(Elemento elemento)  throws TrataExcecaoAcessoMatrizCircuito;
+	public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCircuito;
 
 }
 ~~~
@@ -223,7 +223,7 @@ public interface ICircuitoPainel
 {
 	public int getMaxLin();
 	public int getMaxCol();
-	public Elemento getElemento(int lin, int col);
+	public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCircuito;
 }
 ~~~
 Método | Objetivo
@@ -239,7 +239,7 @@ public interface ICircuitoPiloto
 {
 	public int getMaxLin();
 	public int getMaxCol();
-	public Elemento getElemento(int lin, int col);
+	public Elemento getElemento(int lin, int col) throws TrataExcecaoAcessoMatrizCircuito;
 }
 ~~~
 Método | Objetivo
